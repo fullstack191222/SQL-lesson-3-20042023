@@ -1,0 +1,80 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        /////////HAZARA LE MIVHAN.//////////////
+        // what array limits.
+        // Array size is constants.
+        // Arraylist -- dinamic array we can change the size.
+        ArrayList arrayList = new ArrayList(2);
+        arrayList.add(12L);
+        arrayList.add("asdasdas");
+        arrayList.add(12L);
+        System.out.println(arrayList.size());
+        //The Main difference between array and arraylist -> Array list not constant,
+        // Array is constant cannot change size , for arraylist you can change size.
+
+        ///////////////////////////
+        //Can we put in array values of different TYPES?
+        // yes if the values extend the same object.
+        ////////////////////////////////////////
+        //TYPES . .
+        //int long String char
+        //short  --> in short we can put only small numbers.
+        //long and float when you define you must end with L or F.
+        long num1 = 123l;
+        float num2 = 2345.4334f;
+/////////////////////////////////////////////////
+        //what is different between for and foreach
+        for (int i = 0 ; i<=5 ; i++ ) {
+            System.out.print(i);
+        }//012345
+        //"foreach" is the same as "for" just for the ARRAYS.
+        /////////////////////////////////////
+        //What is Private.
+        //none can access the field . only from the same Class  you can access it.
+        Person p1 = new Person("ILIA");
+        System.out.println(p1.name);
+        //////////////////////////
+        //What is static? read in google.
+        Animal a1 = new Cat();
+        //Animal a2 = new Animal();
+        //a2.saySomething();
+        //a1.saySomething();
+        //if implementing interface do we need to implement the methods ?
+        // YES if implementing interface we should override the method.
+        ///////////////
+        //can we implement more than 1 interface..
+        // YES
+        int number = 10;
+        String ilia = "ilia";
+        /*switch (ilia) {
+            case "sada" :
+                System.out.println(1);
+                break;
+            case "sada" :
+                System.out.println(2);
+                break;
+            case 3 :
+                System.out.println(3);
+                break;
+            default:
+                System.out.println(0);
+        }*/
+        //Can we do switch case on STRINGS?
+        //YES!
+        
+        //What is abstract class?
+        //we cannot create  NEW abstract class. (we cannot create instance of the abstract class)
+        
+        //What is abstract method?
+        //it is method without implementation or without body only signature.
+
+        //what is wrong with this method: 
+    }
+        
+    public static String doSomething(String str) {
+        return "asdas";
+    }
+}
